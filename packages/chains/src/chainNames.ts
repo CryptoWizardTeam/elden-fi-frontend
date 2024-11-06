@@ -2,6 +2,7 @@ import { ChainId } from './chainId'
 
 export const chainNames: Record<ChainId, string> = {
   [ChainId.ETHEREUM]: 'eth',
+  [ChainId.SEPOLIA]: 'sepolia',
   [ChainId.GOERLI]: 'goerli',
   [ChainId.BSC]: 'bsc',
   [ChainId.BSC_TESTNET]: 'bscTestnet',
@@ -34,6 +35,7 @@ export const chainNameToChainId = Object.entries(chainNames).reduce((acc, [chain
 export const defiLlamaChainNames: Record<ChainId, string> = {
   [ChainId.BSC]: 'bsc',
   [ChainId.ETHEREUM]: 'ethereum',
+  [ChainId.SEPOLIA]: 'sepolia',
   [ChainId.GOERLI]: '',
   [ChainId.BSC_TESTNET]: '',
   [ChainId.ARBITRUM_ONE]: 'arbitrum',

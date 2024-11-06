@@ -33,6 +33,10 @@ const SWAP_INFO_BY_CHAIN = {
     v2: INFO_CLIENT_ETH,
     // v3: V3_SUBGRAPH_URLS[ChainId.ETHEREUM],
   },
+  [ChainId.SEPOLIA]: {
+    v2: INFO_CLIENT_ETH,
+    // v3: V3_SUBGRAPH_URLS[ChainId.ETHEREUM],
+  },
   [ChainId.BSC_TESTNET]: {
     v3: V3_SUBGRAPH_URLS[ChainId.BSC_TESTNET],
   },

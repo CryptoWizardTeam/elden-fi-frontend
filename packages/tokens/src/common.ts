@@ -178,6 +178,14 @@ export const CAKE = {
     'PancakeSwap Token',
     'https://elden.fi/',
   ),
+  [ChainId.SEPOLIA]: new ERC20Token(
+    ChainId.SEPOLIA,
+    '0x152649eA73beAb28c5b49B26eb48f7EAD6d4c898',
+    18,
+    'CAKE',
+    'PancakeSwap Token',
+    'https://elden.fi/',
+  ),
   [ChainId.GOERLI]: new ERC20Token(
     ChainId.GOERLI,
     '0xc2C3eAbE0368a2Ea97f485b03D1098cdD7d0c081',
@@ -258,6 +266,7 @@ export const USDC = {
   [ChainId.BSC]: USDC_BSC,
   [ChainId.BSC_TESTNET]: USDC_TESTNET,
   [ChainId.ETHEREUM]: USDC_ETH,
+  [ChainId.SEPOLIA]: USDC_ETH,
   [ChainId.GOERLI]: USDC_GOERLI,
   [ChainId.ZKSYNC]: new ERC20Token(ChainId.ZKSYNC, '0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4', 6, 'USDC', 'USD Coin'),
   [ChainId.ZKSYNC_TESTNET]: new ERC20Token(
@@ -325,6 +334,7 @@ export const USDC = {
 export const USDT = {
   [ChainId.BSC]: USDT_BSC,
   [ChainId.ETHEREUM]: USDT_ETH,
+  [ChainId.SEPOLIA]: USDT_ETH,
   [ChainId.ARBITRUM_ONE]: new ERC20Token(
     ChainId.ARBITRUM_ONE,
     '0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9',
@@ -404,6 +414,7 @@ export const WBTC_ETH = new ERC20Token(
 
 export const STABLE_COIN = {
   [ChainId.ETHEREUM]: USDT[ChainId.ETHEREUM],
+  [ChainId.SEPOLIA]: USDT[ChainId.SEPOLIA],
   [ChainId.GOERLI]: USDC[ChainId.GOERLI],
   [ChainId.BSC]: USDT[ChainId.BSC],
   [ChainId.BSC_TESTNET]: BUSD[ChainId.BSC_TESTNET],

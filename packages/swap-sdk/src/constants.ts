@@ -12,6 +12,7 @@ const FACTORY_ADDRESS_ETH = '0x1097053Fd2ea711dad45caCcc45EfF7548fCB362'
 
 export const FACTORY_ADDRESS_MAP = {
   [ChainId.ETHEREUM]: FACTORY_ADDRESS_ETH,
+  [ChainId.SEPOLIA]: FACTORY_ADDRESS_ETH,
   [ChainId.GOERLI]: FACTORY_ADDRESS_ETH,
   [ChainId.BSC]: FACTORY_ADDRESS,
   [ChainId.BSC_TESTNET]: '0x6725F303b657a9451d8BA641348b6761A6CC7a17',
@@ -42,6 +43,7 @@ const SCROLL_CODE_HASH_ETH = '0xa77338a670355a25835169ec547a0a471e496d599de57fb9
 
 export const INIT_CODE_HASH_MAP = {
   [ChainId.ETHEREUM]: INIT_CODE_HASH_ETH,
+  [ChainId.SEPOLIA]: INIT_CODE_HASH_ETH,
   [ChainId.GOERLI]: INIT_CODE_HASH_ETH,
   [ChainId.BSC]: INIT_CODE_HASH,
   [ChainId.BSC_TESTNET]: '0xd0d4c4cd0848c93cb4fd1f498d7013ee6bfb25783ea21593d5834f5d250ece66',
@@ -66,6 +68,14 @@ export const INIT_CODE_HASH_MAP = {
 export const WETH9 = {
   [ChainId.ETHEREUM]: new ERC20Token(
     ChainId.ETHEREUM,
+    '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
+    18,
+    'WETH',
+    'Wrapped Ether',
+    'https://weth.io'
+  ),
+  [ChainId.SEPOLIA]: new ERC20Token(
+    ChainId.SEPOLIA,
     '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
     18,
     'WETH',
@@ -255,6 +265,7 @@ export const WBNB = {
 
 export const WNATIVE = {
   [ChainId.ETHEREUM]: WETH9[ChainId.ETHEREUM],
+  [ChainId.SEPOLIA]: WETH9[ChainId.SEPOLIA],
   [ChainId.GOERLI]: WETH9[ChainId.GOERLI],
   [ChainId.BSC]: WBNB[ChainId.BSC],
   [ChainId.BSC_TESTNET]: WBNB[ChainId.BSC_TESTNET],
@@ -284,6 +295,7 @@ const BNB = {
 
 export const NATIVE = {
   [ChainId.ETHEREUM]: ETHER,
+  [ChainId.SEPOLIA]: ETHER,
   [ChainId.GOERLI]: { name: 'Goerli Ether', symbol: 'GOR', decimals: 18 },
   [ChainId.BSC]: BNB,
   [ChainId.BSC_TESTNET]: {

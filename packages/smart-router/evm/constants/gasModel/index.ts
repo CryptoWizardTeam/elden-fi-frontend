@@ -2,6 +2,7 @@ import { Token } from '@pancakeswap/sdk'
 import { ChainId } from '@pancakeswap/chains'
 import {
   ethereumTokens,
+  sepoliaTokens,
   bscTokens,
   bscTestnetTokens,
   goerliTestnetTokens,
@@ -23,6 +24,7 @@ import {
 
 export const usdGasTokensByChain = {
   [ChainId.ETHEREUM]: [ethereumTokens.usdt],
+  [ChainId.SEPOLIA]: [sepoliaTokens.usdt],
   [ChainId.GOERLI]: [goerliTestnetTokens.usdc],
   [ChainId.BSC]: [bscTokens.busd],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.busd],

@@ -31,6 +31,12 @@ export const SERVER_NODES = {
     'https://eth.llamarpc.com',
     'https://cloudflare-eth.com',
   ],
+  [ChainId.SEPOLIA]: [
+    getNodeRealUrlV2(ChainId.ETHEREUM, process.env.SERVER_NODE_REAL_API_ETH) || '',
+    'https://ethereum.publicnode.com',
+    'https://eth.llamarpc.com',
+    'https://cloudflare-eth.com',
+  ],
   [ChainId.GOERLI]: [
     getNodeRealUrlV2(ChainId.GOERLI, process.env.SERVER_NODE_REAL_API_GOERLI) || '',
     'https://eth-goerli.public.blastapi.io',
@@ -81,6 +87,12 @@ export const PUBLIC_NODES = {
   [ChainId.BSC_TESTNET]: ['https://data-seed-prebsc-1-s1.binance.org:8545'],
   [ChainId.ETHEREUM]: [
     getNodeRealUrlV2(ChainId.ETHEREUM, process.env.NEXT_PUBLIC_NODE_REAL_API_ETH) || '',
+    'https://ethereum.publicnode.com',
+    'https://eth.llamarpc.com',
+    'https://cloudflare-eth.com',
+  ].filter(Boolean),
+  [ChainId.SEPOLIA]: [
+    getNodeRealUrlV2(ChainId.SEPOLIA, process.env.NEXT_PUBLIC_NODE_REAL_API_ETH) || '',
     'https://ethereum.publicnode.com',
     'https://eth.llamarpc.com',
     'https://cloudflare-eth.com',
